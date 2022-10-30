@@ -206,8 +206,4 @@ INSTANTIATE_TEST_CASE_P(CMapTests,
                         ::testing::ValuesIn(kCMapTestsTestCases));
 }
 
-#else
-
-TEST(DummyTest, ValueParameterizedTestsAreNotSupportedOnThisPlatform) {}
-
 #endif  // GTEST_HAS_PARAM

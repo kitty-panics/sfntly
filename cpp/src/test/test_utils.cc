@@ -50,7 +50,7 @@ int32_t TestUtils::EncodeOneChar(UConverter* encoder, int16_t uchar) {
   target_end = target;
   ucnv_fromUnicode(encoder, &target_end, target + 4,
                    (const UChar**)&source_end, source + sizeof(UChar),
-                   NULL, TRUE, &status);
+                   NULL, true, &status);
   if (!U_SUCCESS(status)) {
     fprintf(stderr, "Error occured in conversion of %d: %s\n",
             uchar, u_errorName(status));
